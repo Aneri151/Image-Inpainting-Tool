@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Inpaint Studio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body { min-height:100vh; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at top, rgba(244, 188, 132, 0.22), transparent 24%), var(--bg); }
+        .hero-card { max-width: 820px; padding: 4rem 2.5rem; border-radius: 28px; text-align:center; }
+        .hero-card h1 { font-size: clamp(2.7rem, 4vw, 4.4rem); line-height:1.05; }
+        .hero-card p { color: var(--muted); font-size: 1.05rem; margin-top:1rem; }
+        .hero-card .btn { min-width: 210px; }
+        .hero-meta { margin-top: 1.5rem; color: var(--muted); }
+    </style>
+</head>
+<body>
+    <div class="card hero-card">
+        <h1 class="hero-title">Image Inpainting</h1>
+        <p>Start with an image, watch the mask detection and inpainting pipeline, then explore the final polished result.</p>
+        <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg mt-4">Get Started</a>
+    </div>
+</body>
+</html>
